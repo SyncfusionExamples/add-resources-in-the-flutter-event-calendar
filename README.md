@@ -5,6 +5,7 @@ A quick-start project that helps you to group the appointments based on the avai
 Watch the video: Coming soon...
 
 KB: https://www.syncfusion.com/kb/12070/how-to-add-resources-in-the-flutter-calendar 
+
 Documentation: https://help.syncfusion.com/flutter/calendar/resource-view  
 
 ## Requirements to run the demo
