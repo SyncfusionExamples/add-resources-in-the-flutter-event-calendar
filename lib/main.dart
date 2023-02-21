@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -72,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 view: CalendarView.timelineWorkWeek,
                 firstDayOfWeek: 1,
                 timeSlotViewSettings:
-                    TimeSlotViewSettings(startHour: 9, endHour: 18),
+                    const TimeSlotViewSettings(startHour: 9, endHour: 18),
                 dataSource: _events,
                 specialRegions: _specialTimeRegions)));
   }
@@ -117,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
               DateTime(date.year, date.month, date.day, startHour, 0, 0);
           _shiftCollection.add(Appointment(
               startTime: _shiftStartTime,
-              endTime: _shiftStartTime.add(Duration(hours: 1)),
+              endTime: _shiftStartTime.add(const Duration(hours: 1)),
               subject: subjectCollection[Random().nextInt(8)],
               color: colorCollection[Random().nextInt(8)],
               startTimeZone: '',
